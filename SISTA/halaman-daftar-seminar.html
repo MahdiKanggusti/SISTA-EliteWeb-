@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SISTA</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="page-header">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index-user.html">Home</a></li>
+                        <li><a href="halaman-jadwal.html">Jadwal</a></li>
+                        <li><a href="halaman-daftar-TA.html">Daftar Seminar</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <a class="btn btn-default navbar-btn" href="login.html" role="button">Logout</a>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <a class="btn btn-default navbar-btn" href="" role="button">Profil</a>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Sistem Informasi Tugas Akhir - SISTA</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <!-- Menu -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-4">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Library</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Detail Jadwal</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            Daftar Peserta
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- informasi TA -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 table-responsive">
+                <table class="table">
+                    <div style="display: flex">
+                        <ul style="list-style-type: none">
+                            <li>
+                                <p style="font-size: 14px;">Nama Seminar     :   Deigo Armando (0102002)</p>
+                                <p style="font-size: 14px;">Judul    :   Rancang Bangun Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework</p>
+                                <p style="font-size: 14px;">Waktu    :   Senin, 4 Januari 2021, 10:00</p>
+                            </li>
+                        </ul>
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- from -->
+    <div class="container">
+        <div class="row">
+            <fieldset class="scheduler-border" id="daftarSeminar">
+                <legend class="scheduler-border">Form Daftar Seminar TA</legend>
+                <form class="form-horizontal">
+                    <!-- NIM -->
+                    <label for="NIM" class="col-sm-1 control-label">NIM</label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="NIM" placeholder="Input your nim">
+                    </div>
+                    <!-- Name -->
+                    <label for="nama" class="col-sm-1 control-label">Nama</label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="nama" placeholder="Input your name" autocomplete="off">
+                    </div>
+                    <!-- Prodi -->
+                    <label for="Prodi" class="col-sm-1 control-label">Prodi</label>
+                    <div class="dropdown col-sm-11">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Prodi
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Sistem Informasi</a></li>
+                          <li><a href="#">Teknik Informatika</a></li>
+                          <li><a href="#">Ilmu Komputer</a></li>
+                        </ul>
+                    </div>
+                    <!-- Program -->
+                    <label for="nama" class="col-sm-1 control-label">Program</label>
+                    <div class="col-sm-9">
+                        <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> D3
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> S1 Reguler
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> S1 Fast Tract
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> S2
+                        </label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <a class="btn btn-default" href="kelola-peserta-admin.html" role="button">Daftar</a>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-4">
+                <div class="footer">
+                    Develop Kelompok SI13 &copy; 2022 |
+                    <a class="text-muted" href="https://www.instagram.com/sttterpadunf/?hl=id" target="_blank"><i
+                        class="fa fa-instagram me-4" aria-hidden="true"></i></a>
+                <a class="text-muted" href="https://web.facebook.com/STTTerpaduNF/?_rdc=1&_rdr" target="_blank"><i
+                        class="fa fa-facebook-square me-4" aria-hidden="true"></i></a>
+                <a class="text-muted"
+                    href="https://api.whatsapp.com/send?phone=6285716243174&fbclid=IwAR0iD2bRroQgPqAh6aOXJZpCZYRZG_YUNlJfZnQsVL-YWKefcn92hvoG1ns"
+                    target="_blank"><i class="fa fa-whatsapp me-4"></i></a>
+                <a class="text-muted" href="https://nurulfikri.ac.id" target="_blank"><i class="fa fa-globe"
+                        aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
